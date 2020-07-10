@@ -1,0 +1,73 @@
+Material proporcionado
+======================
+main.cpp: El programa principal que realiza la prueba del TAD
+a implementar. Dicho programa no debe modificarse
+
+SistemaVentas.h: Definición de la parte publica de la clase
+SistemaVentas. A esta definición deben añadirse los detalles
+de representación, en la parte privada. Así mismo, en este
+archivo podrán realizarse las definiciones auxiliares que
+se consideren oportunas.
+
+SistemaVentas.cpp. Aquí deben implementarse las operaciones del TAD.
+Aparte de implementar los distintos métodos, deberá indicarse
+y justificarse su complejidad en los comentarios que los preceden.
+En este archivo puede implementarse también todos aquellos métodos 
+auxiliares que se consideren oportunos. 
+
+
+Casos de prueba:
+- Entrada: ejemplos.in
+- Salida: ejemplos.out
+
+
+Formato de los archivos de entrada 
+==================================
+Cada línea contiene un comando para invocar una operación.
+Los comandos tienen el mismo nombre y propósito que las operaciones
+del TAD:
+
+an_concierto <codigo concierto> 
+an_cliente <codigo cliente> <codigo concierto>
+borra_cliente <codigo cliente>
+borra_concierto <codigo concierto>
+pon_en_espera <codigo cliente> <codigo concierto>
+hay_clientes_en_espera <codigo concierto>
+proximo_cliente <codigo concierto>
+venta <codigo concierto>
+abandona <codigo cliente>
+clientes
+num_clientes
+num_conciertos
+
+
+Formato de los archivos de salida
+=================================
+Para cada comando
+
+C
+
+se genera una línea en la salida con el siguiente formato
+
+C => <Resultado de ejecutar C>
+
+El resultado de ejecutar cada comando es como sigue:
+
+an_concierto: se imprime OK si todo ha ido bien; CONCIERTO_YA_EXISTE si el concierto ya existe
+an_cliente: se imprime OK si todo ha ido bien; ALTA_NO_ADMITIDA si el cliente ya existe o no existe el concierto 
+borra_cliente: se imprime OK si todo ha ido bien; CLIENTE_NO_EXISTE si el cliente no existe
+borra_concierto: se imprime OK si todo ha ido bien; CONCIERTO_NO_EXISTE si el concierto no existe; CONCIERTO_CON_ESPERAS si la lista de espera no está vacía
+pon_en_espera: se imprime OK si todo ha ido bien; ESPERA_NO_ADMITIDA si el cliente o el concierto no existen o si el cliente ya está en espera
+hay_clientes_en_espera: se imprime SI si hay lista de espera para el concierto dado y NO si no la hay; CONCIERTO_INEXISTENTE si el concierto no existe
+proximo_cliente: se imprime el código del primer cliente de la lista de espera del concierto dado; 
+					CONCIERTO_INEXISTENTE si el concierto no existe; 
+					CONCIERTO_SIN_ESPERAS si el concierto existe pero su lista de espera es vacía
+venta: se imprime OK si todo ha ido bien; 
+					CONCIERTO_INEXISTENTE si el concierto no existe; 
+					CONCIERTO_SIN_ESPERAS si el concierto existe pero su lista de espera es vacía
+abandona: se imprime OK si todo ha ido bien; CLIENTE_NO_EXISTE si el cliente no existe
+clientes: imprime los nombres de los clientes registrados en el sistema
+num_clientes: imprime el número de clientes registrados en el sistema
+num_conciertos: imprime el número de conciertos registrados en el sistema
+					
+En los archivos proporcionados hay ejemplos de cada uno de los comandos descritos. 

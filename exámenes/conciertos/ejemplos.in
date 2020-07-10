@@ -1,0 +1,55 @@
+an_concierto vivaldi
+an_concierto beethoven
+an_concierto vivaldi
+num_conciertos
+borra_concierto beethoven
+num_conciertos
+an_cliente jose vivaldi
+borra_concierto vivaldi
+borra_concierto beethoven
+an_cliente juan vivaldi
+an_cliente petra vivaldi
+venta vivaldi
+pon_en_espera jose vivaldi
+pon_en_espera juan vivaldi
+pon_en_espera elena vivaldi
+venta vivaldi
+pon_en_espera juan wagner
+pon_en_espera juan vivaldi
+pon_en_espera elena wagner
+borra_cliente petra
+clientes
+num_clientes
+proximo_cliente vivaldi
+venta vivaldi
+clientes
+num_clientes
+proximo_cliente vivaldi
+venta vivaldi
+clientes
+num_clientes
+venta vivaldi
+proximo_cliente vivaldi
+venta beethoven
+proximo_cliente beethoven
+pon_en_espera jose vivaldi
+pon_en_espera juan vivaldi
+an_cliente petra vivaldi
+abandona juan
+clientes
+num_clientes
+proximo_cliente vivaldi
+venta vivaldi
+hay_clientes_en_espera vivaldi
+clientes
+num_clientes
+proximo_cliente vivaldi
+venta vivaldi
+hay_clientes_en_espera vivaldi
+clientes
+num_clientes
+hay_clientes_en_espera wagner
+abandona elena
+borra_cliente elena
+clientes
+num_clientes
